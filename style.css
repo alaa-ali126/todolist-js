@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.container {
+  display: flex;
+  width: 80%;
+  margin: 66px auto;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container .title {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+.container .completed-tasks {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.writing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.writing input {
+  width: 250px;
+  height: 40px;
+  border-radius: 24px;
+  background-color: #1f2937;
+  outline: none;
+  border: 1px solid #fff;
+  color: #fff;
+}
+.writing input::placeholder {
+  text-align: center;
+}
+
+.writing .sub-btn {
+  background: linear-gradient(
+    90deg,
+    #ec4899 0%,
+    #8b5cf6 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.container .tasks {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container .task {
+  display: flex;
+  justify-content: center;
+}
+
+.container .task input {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.container .task .label {
+  background-color: #111827;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.container .task label {
+width: 70%;
+text-align: left;
+}
+
+.container .task .label span {
+  font-weight: 700;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.container .task .label .edit {
+  background: linear-gradient(
+    90deg,
+    #ec4899 0%,
+    #8b5cf6 100%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.container .task .label .delete {
+  color: #dc143c;
+}
